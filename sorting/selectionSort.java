@@ -1,4 +1,4 @@
-package Arrays.sorting;
+package sorting;
 
 public class selectionSort {
 

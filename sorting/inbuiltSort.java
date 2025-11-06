@@ -1,4 +1,4 @@
-package Arrays.sorting;
+package sorting;
 
 import java.util.*; //  this package for all method and class 
 // import java.util.Arrays; //for only arrays 
