@@ -10,11 +10,11 @@ public class maxSubArrayusingPrifix {
         for (int i = 1; i < a.length; i++) {
             prefix[i] = prefix[i - 1] + a[i];
         }
-        // prefix={4,-1,4,36,30,28}
-        for (int i = 1; i < a.length; i++) {
-            for (int j = 1; j < a.length; j++) {
-                int start = i, end = j;
-                cs = start == 0 ? prefix[start] : prefix[end] - prefix[start - 1];
+        // prefix={4,-1,4,36,30,28} 
+        for (int i = 0; i < a.length; i++) {
+            for (int j = i; j < a.length; j++) {
+                // int start = i, end = j;
+                cs = i == 0 ? prefix[j] : prefix[j] - prefix[i - 1];
                 maxsum = Math.max(cs, maxsum);
             }
         }

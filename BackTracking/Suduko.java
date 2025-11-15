@@ -86,10 +86,10 @@ public class Suduko {
         };
 
         if (sududoSolver(suduko, 0, 0)) {
-            System.out.println("solution is posible");
+            System.out.println("solution is possible");
             printBoard(suduko);
         } else {
-            System.out.println("solution is not posible ");
+            System.out.println("solution is not possible ");
         }
 
     }

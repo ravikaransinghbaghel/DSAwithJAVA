@@ -8,13 +8,13 @@ public class Pernmutation {
         char curr = ' ';
 
         if (sc.length() == 0) {
-            System.out.println("bs:-> " + i + " ," + curr + " ," + sc + " ," + ans);
+            System.out.println( ans);
             return;
         }
         for (i = 0; i < sc.length(); i++) {
             curr = sc.charAt(i);
             String new_String = sc.substring(0, i) + sc.substring(i + 1);
-            System.out.println(i + " ," + curr + " ," + new_String + " ," + ans);
+            // System.out.println( ans);
             diffOrder(new_String, ans + curr);
         }
 
@@ -25,3 +25,4 @@ public class Pernmutation {
         diffOrder(sc, "");
     }
 }
+    

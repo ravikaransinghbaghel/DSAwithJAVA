@@ -18,14 +18,14 @@ public class maxSumOfSubarrayusingkadan {
         }
         System.out.println("the maximum sum of subArray is : " + ms);
         System.out.println("start : " + start);
-
+ 
         for (int i = start; i <= end; i++) {
             System.out.print(a[i] + " ");
         }
     }
 
     public static void main(String[] args) {
-        int arr[] = { 4, -5, 5, 32, -6, -45, -2 };
+        int arr[] = { -2,1,-3,4,-1,2,1,-5,4 };
         kadanAlgorithm(arr);
     }
 }
