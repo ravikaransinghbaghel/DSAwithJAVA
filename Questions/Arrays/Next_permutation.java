@@ -61,7 +61,7 @@ public class Next_permutation {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 1, 2, 3, 4 };
+        int arr[] = { 1, 2, 3 };
         printAllPermutation(arr);
 
     }
